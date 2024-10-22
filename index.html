@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 70%;
+          height: 30%;
+          overflow: hidden; /* Kenarlıkları içeride tutmak için */
+          border:1px solid rgb(26, 26, 67);
+        }
+        
+        th, td {
+          border: 5px solid rgb(26, 26, 67);
+          padding: 10px;
+          text-align: left;
+        }
+        </style>
+</head>
+<body>
+<div class="quiz_container">
+    <h2 id="quizOrder"></h2>
+    <!-- Progress start-->
+    <div class="quiz_progress--container">
+      <div class="quiz_progress">
+      </div>
+      </div>
+     
+    <div class="question_body">
+        <div id="questionContainer">
+        </div>
+        <button class="quiz_next_button" onclick="nextButtonOnClick()"> İleri </button>
+        
+        </div>
+        
+    </div>
+   
+        
+         
+    <div class="quiz_modal"> 
+            <div class="quiz_modal-body">
+               <!-- <p> Congrats you have <span id="totalCorrectChoice">3</span> correct choice</p> -->
+               <h2 style="color:rgb(26, 26, 67)">Cevaplarınız</h2>
+               <table class="answerTable">
+               <tr class="answerTableRow1">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+               </tr>
+               <tr class="answerTableRow2">
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+               </tr>
+              </table>
+               <h5>Cevaplarınız kaydedilmiştir. Ekrandan çıkabilirsiniz.</h5>
+               <button onclick="repeatQuiz()" class="quiz_next_button"> Quiz Başlat </button>
+
+               
+               
+            </div>
+          </div>
+        </div>
+               
+            </div>
+    </div>
+        </div>
+
+        <script src="quiz.js"></script>
+    
+    
+    
+</body>
+</html>
